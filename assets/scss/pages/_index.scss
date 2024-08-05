@@ -1,0 +1,327 @@
+.index-title {
+  height: calc(100vh - 80px);
+}
+
+.index {
+  .header {
+    padding: 296px 0;
+
+    @include mobile {
+      padding: 144px 0;
+    }
+
+    background-position: center;
+    background-size: cover;
+
+    .title {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+
+      @include mobile {
+        font-size: $fz-24;
+      }
+
+      h1 {
+        color: $mark;
+        font-size: $fz-64;
+        font-weight: bold;
+
+        @include mobile {
+          font-size: $fz-24;
+        }
+      }
+
+      h2 {
+        color: $mark;
+        font-size: $fz-36;
+
+        @include mobile {
+          font-size: $fz-16;
+        }
+      }
+    }
+
+    a {
+      color: $white;
+      background-color: $primary;
+      padding: 6px 12px;
+      font-size: $fz-20;
+    }
+  }
+
+  section {
+    padding: 80px 0;
+
+    @include mobile {
+      padding: 40px 0;
+    }
+
+    h3 {
+      font-size: $fz-48;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 48px;
+      color: $mark;
+
+      @include mobile {
+        font-size: $fz-24;
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  .service {
+    background-color: $secondary;
+
+    .service-list {
+      margin: 0 -12px;
+      display: flex;
+
+      @include pad {
+        flex-wrap: wrap;
+      }
+
+      .service-card {
+        width: 25%;
+        padding: 0 12px;
+        text-align: center;
+
+        @include pad {
+          width: 50%;
+        }
+
+        @include mobile {
+          width: 100%;
+          margin-bottom: 32px;
+        }
+
+        img {
+          width: 83px;
+          margin-bottom: 24px;
+
+        }
+
+        h4 {
+          font-size: $fz-24;
+          color: $mark;
+          font-weight: bold;
+          margin-bottom: 8px;
+
+
+        }
+
+        p {
+          text-align: start;
+
+        }
+      }
+    }
+  }
+
+  .classic {
+
+    .classic-list {
+      display: flex;
+      margin: 0 -12px;
+
+      @include pad {
+        flex-wrap: wrap;
+        margin: 0 -36px;
+      }
+
+      @include mobile {
+        margin: 0px;
+      }
+
+      .classic-card {
+        width: 33%;
+        padding: 0 12px;
+
+        @include pad {
+          width: 100%;
+          padding: 0 216px;
+          margin-bottom: 24px;
+        }
+
+        @include mobile {
+          padding: 0;
+        }
+
+        img {
+          margin-bottom: 8px;
+        }
+
+        h4 {
+          font-size: $fz-48;
+          color: $primary;
+          font-weight: bold;
+          font-style: italic;
+          text-align: center;
+        }
+      }
+    }
+
+  }
+
+  .co-branding {
+    background-position: center;
+    background-size: cover;
+
+    h3 {
+      color: white;
+    }
+
+    .brand-list {
+      display: flex;
+
+      @include pad {
+        flex-wrap: wrap;
+      }
+    }
+
+    .brand-card {
+      h4 {
+        font-size: $fz-48;
+        font-weight: bold;
+        color: $primary;
+        font-style: italic;
+        text-align: center;
+        background-color: $white;
+        padding: 8px 0;
+      }
+
+      @include pad {
+        margin-bottom: 24px;
+      }
+    }
+
+  }
+
+  .customer {
+    .customer-list {
+      display: flex;
+      margin: 0 -12px;
+
+      @include pad {
+        flex-wrap: wrap;
+      }
+    }
+
+    li {
+      padding: 0 12px;
+
+      @include pad {
+        width: 50%;
+      }
+
+      @include mobile {
+        width: 100%;
+        margin-bottom: 16px;
+      }
+
+      .customer-card {
+        border: 1px solid #DEE2E6;
+        box-shadow: 0px 2px 6px #00000029;
+      }
+
+      .customer-feedback {
+        padding: 16px;
+      }
+
+      h5 {
+        margin-bottom: 8px;
+        font-weight: 500;
+      }
+
+      p {
+        padding-bottom: 72px;
+      }
+
+      span {
+        font-size: $fz-14;
+        color: #707070;
+      }
+    }
+  }
+
+  .contact {
+    background-color: $secondary;
+
+    .container {
+      @include pad {
+        padding: 0;
+      }
+
+    }
+
+    .form {
+      width: 50%;
+      padding: 0 6px;
+      margin: 0 auto;
+
+      @include pad {
+        width: 75%;
+        padding: 0;
+      }
+
+      @include mobile {
+        width: 100%;
+      }
+
+      p {
+        font-size: $fz-20;
+        margin-bottom: 24px;
+
+        @include mobile {
+          font-size: $fz-16;
+        }
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+
+        label {
+          margin-bottom: 8px;
+        }
+
+        input,
+        textarea {
+          margin-bottom: 16px;
+          font-size: 16px;
+          text-indent: 12px;
+        }
+
+        input {
+          height: 33px;
+        }
+
+        textarea {
+          height: 136px;
+        }
+
+        .agree-check {
+          display: flex;
+          align-items: center;
+          margin-bottom: 48px;
+
+          input {
+            margin-bottom: 0;
+            margin-right: 4px;
+          }
+        }
+
+        .btn {
+          color: $white;
+          background-color: $primary;
+          border: 0;
+          width: 65%;
+          height: 56px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
+}
